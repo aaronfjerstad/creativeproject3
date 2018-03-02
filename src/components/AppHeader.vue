@@ -4,7 +4,7 @@
       <h2 class="inline_header">Corkboard</h2>
       <span class="smaller">
         <br />
-        Draggable cards/background demo.<br />
+        Draggable cards and draggable background demo.<br />
         A proof-of-concept for draggable components. Surprisingly challenging because components can't by default capture mouse events, in this case mouse move, outside their root element.<br />
         (Drag the background to move all cards.)
       </span>

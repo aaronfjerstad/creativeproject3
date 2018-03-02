@@ -2,7 +2,7 @@
   <div class="project_toolbar_layout">
     <div class="controls">
       <span class="fa_lower command_span" @click="sendAddCardCommand()"><i class="link fa fa-plus" aria-hidden="true"></i></span>
-      <span class="smaller">(Click + to add card) Other corkboard tools will go here.</span>
+      <span class="smaller"> << Click to add card. Other corkboard tools will go here.</span>
     </div>
   </div>
 </template>
