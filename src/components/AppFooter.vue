@@ -1,7 +1,7 @@
 <template>
   <div class="app_footer_layout">
     <div class="footer_text">
-      Footer
+      <a href="https://github.com/aaronfjerstad/creativeproject3">Code on Github</a>
     </div>
   </div>
 </template>
@@ -19,6 +19,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .app_footer_layout {
+    text-align: center;
     background-color: rgba(255,255,255,.2);
     padding: .5rem;
   }
