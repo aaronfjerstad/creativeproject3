@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="static/styles/styles.css" rel="stylesheet" />
+    <title>Corkboard</title>
+    <script>
+    var project = {
+      id: 1,
+      name: "My Project",
+      cards: [
+        {
+          id: 1,
+          title: "Billy's Background",
+          notes: [
+            {
+              id: 1,
+              link: "",
+              key: "Name",
+              markup: "Billy Bob Joe"
+            },
+            {
+              id: 2,
+              link: "https://en.wikipedia.org/wiki/1967",
+              key: "Age",
+              markup: "22"
+            },
+            {
+              id: 3,
+              link: "",
+              key: "Sayings",
+              markup: ""
+            },
+            {
+              id: 4,
+              link: [2],
+              key: "Town",
+              markup: ""
+            }
+          ]
+        },
+        {
+          id: 2,
+          title: "Billy's sayings",
+          notes: [
+            {
+              id: 1,
+              link: "",
+              key: "1",
+              markup: "An apple a day keeps the doctor away."
+            },
+            {
+              id: 2,
+              link: "",
+              key: "2",
+              markup: "Never trust a tiger."
+            }
+          ]
+        },
+        {
+          id: 3,
+          title: "Town info",
+          notes: [
+            {
+              id: 1,
+              link: "",
+              key: "Name",
+              markup: "Deadcreek falls"
+            }
+          ]
+        }
+      ],
+      boards: [
+        {
+          id: 1,
+          name: "Billy Bob Joe",
+          summary: "Information on Billy Bob Joe",
+          cards: [
+            {
+              id: 1,
+              ref: 1,
+              x: 0,
+              y: 0,
+              w: 500
+            },
+            {
+              id: 2,
+              ref: 2,
+              x: 550,
+              y: 30,
+              w: 500
+            }
+          ],
+          yarn: [
+            {
+              start: [1,4],
+              end: [2,1],
+              color: "red"
+            }
+          ]
+        },
+        {
+          id: 2,
+          name: "Deadcreek Falls",
+          summary: "Information on Deadcreek Falls",
+          cards: [
+            {
+              ref: "c",
+              x: 0,
+              y: 0,
+              w: 500
+            }
+          ]
+        }
+      ]
+    };
+
+    var State = {
+      user: {
+        display: "User's Name"
+      }
+    };
+    State.project = project;
+    </script>
+
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
