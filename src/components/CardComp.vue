@@ -99,7 +99,7 @@ export default {
 <style scoped>
   .card_layout {
     position: absolute;
-    background-color: rgba(0, 128, 128, 1);
+    background-color: rgba(100, 128, 148, 1);
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
